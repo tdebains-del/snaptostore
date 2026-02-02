@@ -2,11 +2,11 @@ function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
 
-    // Make the Yes button grow
+    // Make Yes grow
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.4}px`;
 
-    // Teleport the No button
+    // Teleport No
     const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
     const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
 
@@ -19,7 +19,6 @@ function handleYesClick() {
     window.location.href = "yes_page.html";
 }
 
-// Falling hearts and ghosts for the Yes page
 function startRain() {
     const rainContainer = document.querySelector('.rain-container');
     const symbols = ['❤️', '👻', '✨', '💛']; 
